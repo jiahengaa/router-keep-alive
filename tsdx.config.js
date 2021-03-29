@@ -14,7 +14,7 @@ module.exports = {
         ],
         inject: false,
         // only write out CSS for the first bundle (avoids pointless extra files):
-        extract: 'keep-alive.min.css',
+        extract: 'router-keep-alive.min.css',
         extensions: ['.less'],
       })
     );

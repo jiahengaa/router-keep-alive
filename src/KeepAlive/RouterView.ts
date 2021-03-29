@@ -42,7 +42,7 @@ export default class RouterView extends React.Component<{}, IState> {
         });
     }
 
-    hashChanged(location: Location) {
+    hashChanged = ((location: Location) => {
         const viewPath = location.hash.substring(2, location.hash.length);
         const presistenceChangedRoutes = KeepAliveProvider.getPresistenceChangedRoutes();
         if (this.state.curView?.path === viewPath) {
@@ -107,15 +107,15 @@ export default class RouterView extends React.Component<{}, IState> {
                 }
             }
         }
-    }
+    }).bind(this)
 
-    hashChangedHandle(evt: HashChangeEvent) {
+    hashChangedHandle = ((evt: HashChangeEvent) => {
         if (evt.oldURL === evt.newURL) {
             return;
         }
         //分析路由，打开对应菜单
         this.hashChanged((evt.target as Window).location);
-    }
+    }).bind(this)
 
     componentDidMount() {
         this.routesInit();

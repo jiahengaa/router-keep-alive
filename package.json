@@ -1,7 +1,7 @@
 {
-  "homepage": "https://github.com/jiahengaa/keep-alive",
-  "repository": "https://github.com/jiahengaa/keep-alive",
-  "version": "1.0.0",
+  "homepage": "https://github.com/jiahengaa/router-keep-alive",
+  "repository": "https://github.com/jiahengaa/router-keep-alive",
+  "version": "1.0.4",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -13,7 +13,7 @@
   "keywords": [
     "react",
     "component",
-    "keep-alive",
+    "router-keep-alive",
     "router"
   ],
   "engines": {
@@ -49,14 +49,14 @@
     "printWidth": 80,
     "semi": true,
     "singleQuote": true,
-    "trailingComma": "es5"
+    "trailingComma": "esnext"
   },
-  "name": "keep-alive",
+  "name": "router-keep-alive",
   "authors": {
     "name": "jiahengaa",
     "email": "laniusdady@163.com"
   },
-  "module": "dist/keep-alive.esm.js",
+  "module": "dist/router-keep-alive.esm.js",
   "devDependencies": {
     "@types/classnames": "^2.2.10",
     "@types/react": "^16.9.35",
