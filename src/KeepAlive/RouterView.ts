@@ -51,6 +51,9 @@ export default class RouterView extends React.Component<{}, IState> {
             let curView = this.state.viewList.find((p) => p.path === viewPath);
 
             if (curView === null || curView === undefined) {
+                this.setState({
+                    curView: null
+                });
                 return;
             } else {
                 curView.presistence =
