@@ -7,6 +7,8 @@
 
 ### 🏠 [Homepage](https://github.com/jiahengaa/router-keep-alive)
 
+### Only supports hash routing mode!
+
 React Router Component ,Truely Keep Alive Component
 ## Install
 
