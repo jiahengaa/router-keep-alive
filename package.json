@@ -1,7 +1,7 @@
 {
   "homepage": "https://github.com/jiahengaa/router-keep-alive",
   "repository": "https://github.com/jiahengaa/router-keep-alive",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
