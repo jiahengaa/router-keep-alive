@@ -7,7 +7,7 @@
 
 ### 🏠 [Homepage](https://github.com/jiahengaa/router-keep-alive)
 
-### Only supports hash routing mode!
+### &#x1F42E;:pig_nose: Only supports hash routing mode! :point_left:
 
 React Router Component ,Truely Keep Alive Component
 ## Install
