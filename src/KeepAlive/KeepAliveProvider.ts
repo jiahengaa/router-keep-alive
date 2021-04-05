@@ -9,7 +9,7 @@ export interface IProps {
 export class KeepAliveProvider extends React.PureComponent<IProps> {
     private static instance: KeepAliveProvider;
     readonly routes: AppMenuItem[];
-    private willDisposeViews:String[];
+    private willDisposeViews: String[];
     readonly presistenceChangedRoutes: AppMenuItemPresistenceChanged[];
     private constructor(props: IProps) {
         super(props);
@@ -46,7 +46,7 @@ export class KeepAliveProvider extends React.PureComponent<IProps> {
      * push views that are about to be destroyed
      * @param viewPaths views that are about to be destroyed
      */
-    public static pushDisposePresistenceView(viewPaths:String[]){
+    public static pushDisposePresistenceView(viewPaths: String[]) {
         if (!this.instance) {
             warning(this.instance, "please ensure KeepAliveProvider installed");
         }
@@ -57,14 +57,14 @@ export class KeepAliveProvider extends React.PureComponent<IProps> {
      * pop all views that are about to be destroyed
      * @returns all views that are about to be destroyed
      */
-    public static popWillDisposeViews(){
+    public static popWillDisposeViews() {
         if (!this.instance) {
             warning(this.instance, "please ensure KeepAliveProvider installed");
         }
 
         const tempDV = [...this.instance.willDisposeViews]
         this.instance.willDisposeViews = []
-        return tempDV ;
+        return tempDV;
     }
 
     /**
